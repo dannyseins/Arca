@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AreaDataSet" targetNamespace="http://tempuri.org/AreaDataSet.xsd" xmlns:mstns="http://tempuri.org/AreaDataSet.xsd" xmlns="http://tempuri.org/AreaDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="IDH_DatosConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="IDH_DatosConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Verdezul.IDH.Entidades.Properties.Settings.GlobalReference.Default.IDH_DatosConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="IDH_DatosConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="IDH_DatosConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Verdezul.IDH.Entidades.Properties.Settings.GlobalReference.Default.IDH_DatosConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AreaDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="AreaDataSet" msprop:Generator_UserDSName="AreaDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Area" msprop:Generator_UserTableName="Area" msprop:Generator_RowEvArgName="AreaRowChangeEvent" msprop:Generator_TableVarName="tableArea" msprop:Generator_TablePropName="Area" msprop:Generator_RowDeletingName="AreaRowDeleting" msprop:Generator_RowChangingName="AreaRowChanging" msprop:Generator_RowDeletedName="AreaRowDeleted" msprop:Generator_RowEvHandlerName="AreaRowChangeEventHandler" msprop:Generator_TableClassName="AreaDataTable" msprop:Generator_RowChangedName="AreaRowChanged" msprop:Generator_RowClassName="AreaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="Nombre" msprop:Generator_ColumnVarNameInTable="columnNombre" msprop:Generator_ColumnPropNameInRow="Nombre" msprop:Generator_ColumnPropNameInTable="NombreColumn" msprop:Generator_UserColumnName="Nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Nivel" msprop:Generator_UserTableName="Nivel" msprop:Generator_RowEvArgName="NivelRowChangeEvent" msprop:Generator_TableVarName="tableNivel" msprop:Generator_TablePropName="Nivel" msprop:Generator_RowDeletingName="NivelRowDeleting" msprop:Generator_RowChangingName="NivelRowChanging" msprop:Generator_RowDeletedName="NivelRowDeleted" msprop:Generator_RowEvHandlerName="NivelRowChangeEventHandler" msprop:Generator_TableClassName="NivelDataTable" msprop:Generator_RowChangedName="NivelRowChanged" msprop:Generator_RowClassName="NivelRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="IdArea" msprop:Generator_ColumnVarNameInTable="columnIdArea" msprop:Generator_ColumnPropNameInRow="IdArea" msprop:Generator_ColumnPropNameInTable="IdAreaColumn" msprop:Generator_UserColumnName="IdArea" type="xs:int" />
+              <xs:element name="Nombre" msprop:Generator_ColumnVarNameInTable="columnNombre" msprop:Generator_ColumnPropNameInRow="Nombre" msprop:Generator_ColumnPropNameInTable="NombreColumn" msprop:Generator_UserColumnName="Nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Area" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+    <xs:unique name="Nivel_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Nivel" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_Nivel_Area" msdata:parent="Area" msdata:child="Nivel" msdata:parentkey="Id" msdata:childkey="IdArea" msprop:Generator_UserChildTable="Nivel" msprop:Generator_ChildPropName="GetNivelRows" msprop:Generator_UserRelationName="FK_Nivel_Area" msprop:Generator_RelationVarName="relationFK_Nivel_Area" msprop:Generator_UserParentTable="Area" msprop:Generator_ParentPropName="AreaRow" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

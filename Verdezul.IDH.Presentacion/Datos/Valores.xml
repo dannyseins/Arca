@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<valores>
+  <medioConocimiento>
+    <opcion id="1" texto="medioConocimiento1"/>
+    <opcion id="2" texto="medioConocimiento2"/>
+    <opcion id="3" texto="medioConocimiento3"/>
+    <opcion id="4" texto="medioConocimiento4"/>
+    <opcion id="5" texto="medioConocimiento5"/>
+  </medioConocimiento>
+  <motivoInscripcion>
+    <opcion id="1" texto="motivoInscripcion1"/>
+    <opcion id="2" texto="motivoInscripcion2"/>
+    <opcion id="3" texto="motivoInscripcion3"/>
+    <opcion id="4" texto="motivoInscripcion4"/>
+    <opcion id="5" texto="motivoInscripcion5"/>
+  </motivoInscripcion>
+  <motivoSalida>
+    <opcion id="1" texto="motivoSalida1"/>
+    <opcion id="2" texto="motivoSalida2"/>
+    <opcion id="3" texto="motivoSalida3"/>
+    <opcion id="4" texto="motivoSalida4"/>
+    <opcion id="5" texto="motivoSalida5"/>
+  </motivoSalida>
+</valores>

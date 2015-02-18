@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProjectName>SAK</SccProjectName>
+    <UpgradedFromDBP>True</UpgradedFromDBP>
+    <Name>dbpProjectName</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{459f460d-a2a7-41ee-88f4-0d56e78a9cbf}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProjectName>SAK</SccProjectName>
+    <UpgradedFromDBP>True</UpgradedFromDBP>
+    <RootNamespace>dbpProjectName</RootNamespace>
+    <PostUpgradeAddToSCC>;C:\Users\Danny\Documents\Visual Studio 2013\Projects\IDH\Verdezul.IDH.DataBase\Verdezul.IDH.DataBase.sqlproj;C:\Users\Danny\Documents\Visual Studio 2013\Projects\IDH\Verdezul.IDH.DataBase\Connections.txt</PostUpgradeAddToSCC>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProjectName>SAK</SccProjectName>
+    <UpgradedFromDBP>True</UpgradedFromDBP>
+    <AssemblyName>dbpProjectName</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="ChangeScripts\Caja" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ChangeScripts" />
+    <Folder Include="ChangeScripts\Alumno" />
+    <Folder Include="ChangeScripts\Area" />
+    <Folder Include="ChangeScripts\Aula" />
+    <Folder Include="ChangeScripts\CierreDeCaja" />
+    <Folder Include="ChangeScripts\Conferencia" />
+    <Folder Include="ChangeScripts\Curso" />
+    <Folder Include="ChangeScripts\Docente" />
+    <Folder Include="ChangeScripts\EstadoAlumno" />
+    <Folder Include="ChangeScripts\Horario" />
+    <Folder Include="ChangeScripts\HorarioAlumno" />
+    <Folder Include="ChangeScripts\Nivel" />
+    <Folder Include="ChangeScripts\Observacion" />
+    <Folder Include="ChangeScripts\Pago" />
+    <Folder Include="ChangeScripts\Parametro" />
+    <Folder Include="ChangeScripts\Reportes" />
+    <Folder Include="ChangeScripts\Rubro" />
+    <Folder Include="ChangeScripts\SecuenciaImpresion" />
+    <Folder Include="ChangeScripts\Usuario" />
+    <Folder Include="Create Scripts" />
+    <Folder Include="Create Scripts\Vistas" />
+    <Folder Include="Queries" />
+    <Folder Include="Properties" />
+  </ItemGroup>
+  <ItemGroup>
+    <NotInBuild Include="Connections.txt" />
+    <NotInBuild Include="ChangeScripts\Alumno\Alumno_Borrar.sql" />
+    <NotInBuild Include="ChangeScripts\Alumno\Alumno_Insertar.sql" />
+    <NotInBuild Include="ChangeScripts\Alumno\Alumno_Modificar.sql" />
+    <NotInBuild Include="ChangeScripts\Alumno\Alumno_ModificarFoto.sql" />
+    <NotInBuild Include="ChangeScripts\Alumno\Alumno_Seleccionar.sql" />
+    <NotInBuild Include="ChangeScripts\Alumno\Alumno_SeleccionarxIdentificacion.sql" />
+    <NotInBuild Include="ChangeScripts\Alumno\Alumno_SeleccionarxIdentificaionxNombrexApellido.sql" />
+    <NotInBuild Include="ChangeScripts\Alumno\Alumno_SeleccionarxPertenenciaAreaNivelCurso.sql" />
+    <NotInBuild Include="ChangeScripts\Area\Area_Borrar.sql" />
+    <NotInBuild Include="ChangeScripts\Area\Area_Insertar.sql" />
+    <NotInBuild Include="ChangeScripts\Area\Area_Modificar.sql" />
+    <NotInBuild Include="ChangeScripts\Area\Area_Seleccionar.sql" />
+    <NotInBuild Include="ChangeScripts\Area\Area_SeleccionarConNiveles.sql" />
+    <NotInBuild Include="ChangeScripts\Aula\Aula_Borrar.sql" />
+    <NotInBuild Include="ChangeScripts\Aula\Aula_Insertar.sql" />
+    <NotInBuild Include="ChangeScripts\Aula\Aula_Modificar.sql" />
+    <NotInBuild Include="ChangeScripts\Aula\Aula_Seleccionar.sql" />
+    <NotInBuild Include="ChangeScripts\Aula\Aula_SeleccionarActivos.sql" />
+    <NotInBuild Include="ChangeScripts\CierreDeCaja\CierreDeCaja_AbrirCaja.sql" />
+    <NotInBuild Include="ChangeScripts\CierreDeCaja\CierreDeCaja_CerrarCaja.sql" />
+    <NotInBuild Include="ChangeScripts\CierreDeCaja\CierreDeCaja_Insertar.sql" />
+    <NotInBuild Include="ChangeScripts\CierreDeCaja\CierreDeCaja_Modificar.sql" />
+    <NotInBuild Include="ChangeScripts\CierreDeCaja\CierreDeCaja_PedirIdCierreDeCajaxIdCajaIdUsuario.sql" />
+    <NotInBuild Include="ChangeScripts\CierreDeCaja\CierreDeCaja_Seleccionar.sql" />
+    <NotInBuild Include="ChangeScripts\CierreDeCaja\CierreDeCaja_SeleccionarEntreFechas.sql" />
+    <NotInBuild Include="ChangeScripts\Conferencia\Conferencia_Borrar.sql" />
+    <NotInBuild Include="ChangeScripts\Conferencia\Conferencia_Insertar.sql" />
+    <NotInBuild Include="ChangeScripts\Conferencia\Conferencia_Modificar.sql" />
+    <NotInBuild Include="ChangeScripts\Conferencia\Conferencia_Seleccionar.sql" />
+    <NotInBuild Include="ChangeScripts\Conferencia\Conferencia_SeleccionarActivos.sql" />
+    <NotInBuild Include="ChangeScripts\Curso\Curso_Borrar.sql" />
+    <NotInBuild Include="ChangeScripts\Curso\Curso_Insertar.sql" />
+    <NotInBuild Include="ChangeScripts\Curso\Curso_Modificar.sql" />
+    <NotInBuild Include="ChangeScripts\Curso\Curso_Seleccionar.sql" />
+    <NotInBuild Include="ChangeScripts\Curso\Curso_SeleccionarActivos.sql" />
+    <NotInBuild Include="ChangeScripts\Curso\Curso_SeleccionarxIdAlumno.sql" />
+    <NotInBuild Include="ChangeScripts\Docente\Docente_Borrar.sql" />
+    <NotInBuild Include="ChangeScripts\Docente\Docente_Insertar.sql" />
+    <NotInBuild Include="ChangeScripts\Docente\Docente_Modificar.sql" />
+    <NotInBuild Include="ChangeScripts\Docente\Docente_Seleccionar.sql" />
+    <NotInBuild Include="ChangeScripts\Docente\Docente_SeleccionarActivos.sql" />
+    <NotInBuild Include="ChangeScripts\EstadoAlumno\EstadoAlumno_Borrar.sql" />
+    <NotInBuild Include="ChangeScripts\EstadoAlumno\EstadoAlumno_Insertar.sql" />
+    <NotInBuild Include="ChangeScripts\EstadoAlumno\EstadoAlumno_Modificar.sql" />
+    <NotInBuild Include="ChangeScripts\EstadoAlumno\EstadoAlumno_Seleccionar.sql" />
+    <NotInBuild Include="ChangeScripts\Horario\Horario_Borrar.sql" />
+    <NotInBuild Include="ChangeScripts\Horario\Horario_Info_SeleccionarxTipoHorario.sql" />
+    <NotInBuild Include="ChangeScripts\Horario\Horario_Insertar.sql" />
+    <NotInBuild Include="ChangeScripts\Horario\Horario_Modificar.sql" />
+    <NotInBuild Include="ChangeScripts\Horario\Horario_Seleccionar.sql" />
+    <NotInBuild Include="ChangeScripts\Horario\Horario_SeleccionarActivos.sql" />
+    <NotInBuild Include="ChangeScripts\HorarioAlumno\HorarioAlumno_Borrar.sql" />
+    <NotInBuild Include="ChangeScripts\HorarioAlumno\HorarioAlumno_CambiarNivel.sql" />
+    <NotInBuild Include="ChangeScripts\HorarioAlumno\HorarioAlumno_Insertar.sql" />
+    <NotInBuild Include="ChangeScripts\HorarioAlumno\HorarioAlumno_Modificar.sql" />
+    <NotInBuild Include="ChangeScripts\HorarioAlumno\HorarioAlumno_PedirHorarioyNivelxAlumno.sql" />
+    <NotInBuild Include="ChangeScripts\HorarioAlumno\HorarioAlumno_SeleccionarxIdAlumno.sql" />
+    <NotInBuild Include="ChangeScripts\HorarioAlumno\HorarioAlumno_SeleccionarxIdAlumnoTipoHorario.sql" />
+    <NotInBuild Include="ChangeScripts\Nivel\Nivel_Borrar.sql" />
+    <NotInBuild Include="ChangeScripts\Nivel\Nivel_Insertar.sql" />
+    <NotInBuild Include="ChangeScripts\Nivel\Nivel_Modificar.sql" />
+    <NotInBuild Include="ChangeScripts\Nivel\Nivel_Seleccionar.sql" />
+    <NotInBuild Include="ChangeScripts\Observacion\Observacion_Borrar.sql" />
+    <NotInBuild Include="ChangeScripts\Observacion\Observacion_Insertar.sql" />
+    <NotInBuild Include="ChangeScripts\Observacion\Observacion_Modificar.sql" />
+    <NotInBuild Include="ChangeScripts\Observacion\Observacion_SeleccionarxIdAlumno.sql" />
+    <NotInBuild Include="ChangeScripts\Pago\DetallePago_Insertar.sql" />
+    <NotInBuild Include="ChangeScripts\Pago\Pago_CambiarEstado.sql" />
+    <NotInBuild Include="ChangeScripts\Pago\Pago_Insertar.sql" />
+    <NotInBuild Include="ChangeScripts\Pago\Pago_Modificar.sql" />
+    <NotInBuild Include="ChangeScripts\Pago\Pago_SeleccionarConDetallexCierreDeCaja.sql" />
+    <NotInBuild Include="ChangeScripts\Pago\Pago_SeleccionarxIdConDetalle.sql" />
+    <NotInBuild Include="ChangeScripts\Pago\Pago_Seleccionar.sql" />
+    <NotInBuild Include="ChangeScripts\Parametro\Parametro_Modificar.sql" />
+    <NotInBuild Include="ChangeScripts\Parametro\Parametro_Seleccionar.sql" />
+    <NotInBuild Include="ChangeScripts\Parametro\Parametro_SeleccionarxNombre.sql" />
+    <NotInBuild Include="ChangeScripts\Reportes\Alumno_SeleccionarxIdHorario.sql" />
+    <NotInBuild Include="ChangeScripts\Reportes\Alumno_SeleccionarxMesNacimiento.sql" />
+    <NotInBuild Include="ChangeScripts\Reportes\Horario_SeleccionarxIdCurso.sql" />
+    <NotInBuild Include="ChangeScripts\Reportes\Horario_SeleccionarxIdNivelArea.sql" />
+    <NotInBuild Include="ChangeScripts\Reportes\Pago_PedirDeudas.sql" />
+    <NotInBuild Include="ChangeScripts\Reportes\vistaDeudas.sql" />
+    <NotInBuild Include="ChangeScripts\Rubro\Rubro_Borrar.sql" />
+    <NotInBuild Include="ChangeScripts\Rubro\Rubro_Insertar.sql" />
+    <NotInBuild Include="ChangeScripts\Rubro\Rubro_Modificar.sql" />
+    <NotInBuild Include="ChangeScripts\Rubro\Rubro_Seleccionar.sql" />
+    <NotInBuild Include="ChangeScripts\Rubro\Rubro_SeleccionarActivos.sql" />
+    <NotInBuild Include="ChangeScripts\SecuenciaImpresion\SecuenciaImpresion_Borrar.sql" />
+    <NotInBuild Include="ChangeScripts\SecuenciaImpresion\SecuenciaImpresion_Insertar.sql" />
+    <NotInBuild Include="ChangeScripts\SecuenciaImpresion\SecuenciaImpresion_Modificar.sql" />
+    <NotInBuild Include="ChangeScripts\SecuenciaImpresion\SecuenciaImpresion_PedirNuevoNumeroSecuencia.sql" />
+    <NotInBuild Include="ChangeScripts\SecuenciaImpresion\SecuenciaImpresion_PoneEnUso.sql" />
+    <NotInBuild Include="ChangeScripts\SecuenciaImpresion\SecuenciaImpresion_Seleccionar.sql" />
+    <NotInBuild Include="ChangeScripts\Usuario\Usuario_Autenticar.sql" />
+    <NotInBuild Include="ChangeScripts\Usuario\Usuario_Borrar.sql" />
+    <NotInBuild Include="ChangeScripts\Usuario\Usuario_CambiarClave.sql" />
+    <NotInBuild Include="ChangeScripts\Usuario\Usuario_Insertar.sql" />
+    <NotInBuild Include="ChangeScripts\Usuario\Usuario_Modificar.sql" />
+    <NotInBuild Include="ChangeScripts\Usuario\Usuario_PedirTipoRolxUsuario.sql" />
+    <NotInBuild Include="ChangeScripts\Usuario\Usuario_Seleccionar.sql" />
+    <NotInBuild Include="Create Scripts\CreateDataBase.sql" />
+    <NotInBuild Include="Create Scripts\Vistas\Vista_HorarioCurso.sql" />
+    <NotInBuild Include="Queries\Script1.sql" />
+    <NotInBuild Include="Queries\Script2.sql" />
+    <NotInBuild Include="Queries\Script3.sql" />
+    <NotInBuild Include="Queries\Script4.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="storeProcedures.bat" />
+    <None Include="storeProcedures.sql" />
+    <NotInBuild Include="ChangeScripts\Caja\Caja_Borrar.sql" />
+    <NotInBuild Include="ChangeScripts\Caja\Caja_Insertar.sql" />
+    <NotInBuild Include="ChangeScripts\Caja\Caja_Modificar.sql" />
+    <NotInBuild Include="ChangeScripts\Caja\Caja_Seleccionar.sql" />
+  </ItemGroup>
+</Project>

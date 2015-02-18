@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3577F939-3A83-4A87-8166-EF3800AC4B27}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Verdezul.IDH.Configuracion</RootNamespace>
+    <AssemblyName>Verdezul.IDH.Configuracion</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DatosEmpresa.cs" />
+    <Compile Include="Enumerados\TipoAbono.cs" />
+    <Compile Include="Enumerados\TipoDocumentoPago.cs" />
+    <Compile Include="CampoFilaAdicional.cs" />
+    <Compile Include="OpcionPregunta.cs" />
+    <Compile Include="RecaudacionesConfiguracion.cs" />
+    <Compile Include="MetodosGenerales.cs" />
+    <Compile Include="Enumerados\MotivoPago.cs" />
+    <Compile Include="Enumerados\EstadoPago.cs" />
+    <Compile Include="Enumerados\TipoRol.cs" />
+    <Compile Include="DocumentoPagoImpreso.cs" />
+    <Compile Include="FacturasSection.cs" />
+    <Compile Include="ImpresoraSection.cs" />
+    <Compile Include="PosicionSection.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TipoLetraSection.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Verdezul.IDH.Entidades\Verdezul.IDH.Entidades.csproj">
+      <Project>{8124ED62-0C0D-4808-BAFC-2949944DB10A}</Project>
+      <Name>Verdezul.IDH.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Verdezul.Utilidades\Verdezul.Utilidades.csproj">
+      <Project>{B0484E8E-D228-4BB0-9F8E-9EE970FC787C}</Project>
+      <Name>Verdezul.Utilidades</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

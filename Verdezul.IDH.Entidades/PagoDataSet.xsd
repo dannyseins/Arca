@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PagoDataSet" targetNamespace="http://tempuri.org/PagoDataSet.xsd" xmlns:mstns="http://tempuri.org/PagoDataSet.xsd" xmlns="http://tempuri.org/PagoDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="3" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Fredos_CajaConnectionString2" IsAppSettingsProperty="True" Modifier="Assembly" Name="Fredos_CajaConnectionString2 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Verdezul.IDH.Entidades.Properties.Settings.GlobalReference.Default.Fredos_CajaConnectionString2" Provider="System.Data.SqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="IDH_DatosConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="IDH_DatosConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Verdezul.IDH.Entidades.Properties.Settings.GlobalReference.Default.IDH_DatosConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="IDH_DatosConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="IDH_DatosConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Verdezul.IDH.Entidades.Properties.Settings.GlobalReference.Default.IDH_DatosConnectionString1" Provider="System.Data.SqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="IDH_DatosConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="IDH_DatosConnectionString2 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Verdezul.IDH.Entidades.Properties.Settings.GlobalReference.Default.IDH_DatosConnectionString2" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PagoDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PagoDataSet" msprop:Generator_DataSetName="PagoDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DetallePago" msprop:Generator_UserTableName="DetallePago" msprop:Generator_RowDeletedName="DetallePagoRowDeleted" msprop:Generator_RowChangedName="DetallePagoRowChanged" msprop:Generator_RowClassName="DetallePagoRow" msprop:Generator_RowChangingName="DetallePagoRowChanging" msprop:Generator_RowEvArgName="DetallePagoRowChangeEvent" msprop:Generator_RowEvHandlerName="DetallePagoRowChangeEventHandler" msprop:Generator_TableClassName="DetallePagoDataTable" msprop:Generator_TableVarName="tableDetallePago" msprop:Generator_RowDeletingName="DetallePagoRowDeleting" msprop:Generator_TablePropName="DetallePago">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="Id" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:int" />
+              <xs:element name="IdPago" msprop:Generator_UserColumnName="IdPago" msprop:Generator_ColumnPropNameInRow="IdPago" msprop:Generator_ColumnVarNameInTable="columnIdPago" msprop:Generator_ColumnPropNameInTable="IdPagoColumn" type="xs:int" />
+              <xs:element name="Cantidad" msprop:Generator_UserColumnName="Cantidad" msprop:Generator_ColumnPropNameInRow="Cantidad" msprop:Generator_ColumnVarNameInTable="columnCantidad" msprop:Generator_ColumnPropNameInTable="CantidadColumn" type="xs:int" />
+              <xs:element name="Valor" msprop:Generator_UserColumnName="Valor" msprop:Generator_ColumnPropNameInRow="Valor" msprop:Generator_ColumnVarNameInTable="columnValor" msprop:Generator_ColumnPropNameInTable="ValorColumn" type="xs:decimal" />
+              <xs:element name="IVA" msprop:Generator_UserColumnName="IVA" msprop:Generator_ColumnPropNameInRow="IVA" msprop:Generator_ColumnVarNameInTable="columnIVA" msprop:Generator_ColumnPropNameInTable="IVAColumn" type="xs:decimal" />
+              <xs:element name="PVP" msprop:Generator_UserColumnName="PVP" msprop:Generator_ColumnPropNameInRow="PVP" msprop:Generator_ColumnVarNameInTable="columnPVP" msprop:Generator_ColumnPropNameInTable="PVPColumn" type="xs:decimal" />
+              <xs:element name="Descuento" msprop:Generator_UserColumnName="Descuento" msprop:Generator_ColumnPropNameInRow="Descuento" msprop:Generator_ColumnVarNameInTable="columnDescuento" msprop:Generator_ColumnPropNameInTable="DescuentoColumn" type="xs:int" />
+              <xs:element name="IdMotivoPago" msprop:Generator_UserColumnName="IdMotivoPago" msprop:Generator_ColumnPropNameInRow="IdMotivoPago" msprop:Generator_ColumnVarNameInTable="columnIdMotivoPago" msprop:Generator_ColumnPropNameInTable="IdMotivoPagoColumn" type="xs:int" />
+              <xs:element name="IdRubro" msprop:Generator_UserColumnName="IdRubro" msprop:Generator_ColumnPropNameInRow="IdRubro" msprop:Generator_ColumnVarNameInTable="columnIdRubro" msprop:Generator_ColumnPropNameInTable="IdRubroColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="IdConferencia" msprop:Generator_UserColumnName="IdConferencia" msprop:Generator_ColumnPropNameInRow="IdConferencia" msprop:Generator_ColumnVarNameInTable="columnIdConferencia" msprop:Generator_ColumnPropNameInTable="IdConferenciaColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="IdHorarioAlumno" msprop:Generator_UserColumnName="IdHorarioAlumno" msprop:Generator_ColumnPropNameInRow="IdHorarioAlumno" msprop:Generator_ColumnVarNameInTable="columnIdHorarioAlumno" msprop:Generator_ColumnPropNameInTable="IdHorarioAlumnoColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="MesPago" msprop:Generator_UserColumnName="MesPago" msprop:Generator_ColumnPropNameInRow="MesPago" msprop:Generator_ColumnVarNameInTable="columnMesPago" msprop:Generator_ColumnPropNameInTable="MesPagoColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Rubro" msprop:Generator_UserColumnName="Rubro" msprop:Generator_ColumnPropNameInRow="Rubro" msprop:Generator_ColumnVarNameInTable="columnRubro" msprop:Generator_ColumnPropNameInTable="RubroColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Conferencia" msprop:Generator_UserColumnName="Conferencia" msprop:Generator_ColumnPropNameInRow="Conferencia" msprop:Generator_ColumnVarNameInTable="columnConferencia" msprop:Generator_ColumnPropNameInTable="ConferenciaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="HorarioNombre" msprop:Generator_UserColumnName="HorarioNombre" msprop:Generator_ColumnPropNameInRow="HorarioNombre" msprop:Generator_ColumnVarNameInTable="columnHorarioNombre" msprop:Generator_ColumnPropNameInTable="HorarioNombreColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Descripcion" msprop:Generator_UserColumnName="Descripcion" msprop:Generator_ColumnVarNameInTable="columnDescripcion" msprop:Generator_ColumnPropNameInRow="Descripcion" msprop:Generator_ColumnPropNameInTable="DescripcionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoAbono" msprop:Generator_UserColumnName="TipoAbono" msprop:Generator_ColumnVarNameInTable="columnTipoAbono" msprop:Generator_ColumnPropNameInRow="TipoAbono" msprop:Generator_ColumnPropNameInTable="TipoAbonoColumn" type="xs:int" />
+              <xs:element name="Area" msprop:Generator_UserColumnName="Area" msprop:Generator_ColumnPropNameInRow="Area" msprop:Generator_ColumnVarNameInTable="columnArea" msprop:Generator_ColumnPropNameInTable="AreaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Nivel" msprop:Generator_UserColumnName="Nivel" msprop:Generator_ColumnPropNameInRow="Nivel" msprop:Generator_ColumnVarNameInTable="columnNivel" msprop:Generator_ColumnPropNameInTable="NivelColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Curso" msprop:Generator_UserColumnName="Curso" msprop:Generator_ColumnPropNameInRow="Curso" msprop:Generator_ColumnVarNameInTable="columnCurso" msprop:Generator_ColumnPropNameInTable="CursoColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Pago" msprop:Generator_UserTableName="Pago" msprop:Generator_RowDeletedName="PagoRowDeleted" msprop:Generator_RowChangedName="PagoRowChanged" msprop:Generator_RowClassName="PagoRow" msprop:Generator_RowChangingName="PagoRowChanging" msprop:Generator_RowEvArgName="PagoRowChangeEvent" msprop:Generator_RowEvHandlerName="PagoRowChangeEventHandler" msprop:Generator_TableClassName="PagoDataTable" msprop:Generator_TableVarName="tablePago" msprop:Generator_RowDeletingName="PagoRowDeleting" msprop:Generator_TablePropName="Pago">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="Id" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:int" />
+              <xs:element name="IdAlumno" msprop:Generator_UserColumnName="IdAlumno" msprop:Generator_ColumnPropNameInRow="IdAlumno" msprop:Generator_ColumnVarNameInTable="columnIdAlumno" msprop:Generator_ColumnPropNameInTable="IdAlumnoColumn" type="xs:int" />
+              <xs:element name="IdCierreDeCaja" msprop:Generator_UserColumnName="IdCierreDeCaja" msprop:Generator_ColumnPropNameInRow="IdCierreDeCaja" msprop:Generator_ColumnVarNameInTable="columnIdCierreDeCaja" msprop:Generator_ColumnPropNameInTable="IdCierreDeCajaColumn" type="xs:int" />
+              <xs:element name="IdSecuencia" msprop:Generator_UserColumnName="IdSecuencia" msprop:Generator_ColumnPropNameInRow="IdSecuencia" msprop:Generator_ColumnVarNameInTable="columnIdSecuencia" msprop:Generator_ColumnPropNameInTable="IdSecuenciaColumn" type="xs:int" />
+              <xs:element name="Fecha" msprop:Generator_UserColumnName="Fecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" type="xs:dateTime" />
+              <xs:element name="TipoDocumentoPago" msprop:Generator_UserColumnName="TipoDocumentoPago" msprop:Generator_ColumnPropNameInRow="TipoDocumentoPago" msprop:Generator_ColumnVarNameInTable="columnTipoDocumentoPago" msprop:Generator_ColumnPropNameInTable="TipoDocumentoPagoColumn" type="xs:int" />
+              <xs:element name="Estado" msprop:Generator_UserColumnName="Estado" msprop:Generator_ColumnPropNameInRow="Estado" msprop:Generator_ColumnVarNameInTable="columnEstado" msprop:Generator_ColumnPropNameInTable="EstadoColumn" type="xs:int" />
+              <xs:element name="FormaPago" msprop:Generator_UserColumnName="FormaPago" msprop:Generator_ColumnPropNameInRow="FormaPago" msprop:Generator_ColumnVarNameInTable="columnFormaPago" msprop:Generator_ColumnPropNameInTable="FormaPagoColumn" type="xs:int" />
+              <xs:element name="NumeroDocumento" msprop:Generator_UserColumnName="NumeroDocumento" msprop:Generator_ColumnPropNameInRow="NumeroDocumento" msprop:Generator_ColumnVarNameInTable="columnNumeroDocumento" msprop:Generator_ColumnPropNameInTable="NumeroDocumentoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Observacion" msprop:Generator_UserColumnName="Observacion" msprop:Generator_ColumnPropNameInRow="Observacion" msprop:Generator_ColumnVarNameInTable="columnObservacion" msprop:Generator_ColumnPropNameInTable="ObservacionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DetallePago" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+    <xs:unique name="Pago_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Pago" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_DetallePedido_Pedido" msdata:parent="Pago" msdata:child="DetallePago" msdata:parentkey="Id" msdata:childkey="IdPago" msprop:Generator_UserRelationName="FK_DetallePedido_Pedido" msprop:Generator_RelationVarName="relationFK_DetallePedido_Pedido" msprop:Generator_UserChildTable="DetallePago" msprop:Generator_UserParentTable="Pago" msprop:Generator_ParentPropName="PagoRow" msprop:Generator_ChildPropName="GetDetallePagoRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

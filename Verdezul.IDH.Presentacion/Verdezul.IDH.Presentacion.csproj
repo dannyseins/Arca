@@ -1,0 +1,699 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3C22F40D-30A1-4FF7-BE32-2D4973DE145F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Verdezul.IDH.Presentacion</RootNamespace>
+    <AssemblyName>IDH</AssemblyName>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ApplicationIcon>16x16.ico</ApplicationIcon>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>http://localhost/Verdezul.IDH.Presentacion/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcercaDeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcercaDeForm.Designer.cs">
+      <DependentUpon>AcercaDeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\AreaNivelForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\AreaNivelForma.Designer.cs">
+      <DependentUpon>AreaNivelForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\CajaForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\CajaForma.Designer.cs">
+      <DependentUpon>CajaForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\ConferenciaForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\ConferenciaForma.Designer.cs">
+      <DependentUpon>ConferenciaForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\AulasForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\AulasForma.Designer.cs">
+      <DependentUpon>AulasForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\DocentesForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\DocentesForma.Designer.cs">
+      <DependentUpon>DocentesForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\CursosForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\CursosForma.Designer.cs">
+      <DependentUpon>CursosForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\EstadoAlumnosForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\EstadoAlumnosForma.Designer.cs">
+      <DependentUpon>EstadoAlumnosForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\RubroForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\RubroForma.Designer.cs">
+      <DependentUpon>RubroForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\SecuenciasForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\SecuenciasForma.Designer.cs">
+      <DependentUpon>SecuenciasForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\AlumnoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\AlumnoControl.Designer.cs">
+      <DependentUpon>AlumnoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\AreaNivelUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\AreaNivelUserControl.Designer.cs">
+      <DependentUpon>AreaNivelUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\HorarioUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\HorarioUserControl.Designer.cs">
+      <DependentUpon>HorarioUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\DetallePagoControl.DataGridView.cs">
+      <DependentUpon>DetallePagoControl.cs</DependentUpon>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\DataGridPagos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controles\DataGridPagos.Designer.cs">
+      <DependentUpon>DataGridPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\AlumnoBusquedaForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles\AlumnoBusquedaForma.Designer.cs">
+      <DependentUpon>AlumnoBusquedaForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Academicos\AlumnosPorNivelFormaReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Academicos\AlumnosPorNivelFormaReporte.Designer.cs">
+      <DependentUpon>AlumnosPorNivelFormaReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Academicos\ObservacionesAlumnoFormaReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Academicos\ObservacionesAlumnoFormaReporte.Designer.cs">
+      <DependentUpon>ObservacionesAlumnoFormaReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Academicos\HorariosNivelesFormaReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Academicos\HorariosNivelesFormaReporte.Designer.cs">
+      <DependentUpon>HorariosNivelesFormaReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Academicos\HorariosCursosFormaReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Academicos\HorariosCursosFormaReporte.Designer.cs">
+      <DependentUpon>HorariosCursosFormaReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Recaudaciones\ReimpresionFacturaFormaReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Recaudaciones\ReimpresionFacturaFormaReporte.Designer.cs">
+      <DependentUpon>ReimpresionFacturaFormaReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Recaudaciones\DeudasAlumnoFormaReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Recaudaciones\DeudasAlumnoFormaReporte.Designer.cs">
+      <DependentUpon>DeudasAlumnoFormaReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Recaudaciones\DeudasNivelesFormaReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Recaudaciones\DeudasNivelesFormaReporte.Designer.cs">
+      <DependentUpon>DeudasNivelesFormaReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Recaudaciones\DeudasCursosFormaReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Recaudaciones\DeudasCursosFormaReporte.Designer.cs">
+      <DependentUpon>DeudasCursosFormaReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Recaudaciones\PagosxCierreFormaReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Recaudaciones\PagosxCierreFormaReporte.Designer.cs">
+      <DependentUpon>PagosxCierreFormaReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Recaudaciones\CierresDeCajaFormaReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Recaudaciones\CierresDeCajaFormaReporte.Designer.cs">
+      <DependentUpon>CierresDeCajaFormaReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ListadosGenerales\DocentesFormaReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ListadosGenerales\DocentesFormaReporte.Designer.cs">
+      <DependentUpon>DocentesFormaReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\HorarioCursosForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\HorarioCursosForma.Designer.cs">
+      <DependentUpon>HorarioCursosForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ListadosGenerales\AulasFormaReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ListadosGenerales\AulasFormaReporte.Designer.cs">
+      <DependentUpon>AulasFormaReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ListadosGenerales\RubrosFormaReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ListadosGenerales\RubrosFormaReporte.Designer.cs">
+      <DependentUpon>RubrosFormaReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ListadosGenerales\ConferenciasFormaReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ListadosGenerales\ConferenciasFormaReporte.Designer.cs">
+      <DependentUpon>ConferenciasFormaReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ListadosGenerales\CumpleanosFormaReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ListadosGenerales\CumpleanosFormaReporte.Designer.cs">
+      <DependentUpon>CumpleanosFormaReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\AlumnoNivelForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\AlumnoNivelForma.Designer.cs">
+      <DependentUpon>AlumnoNivelForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\ObservacionesAlumnoForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\ObservacionesAlumnoForma.Designer.cs">
+      <DependentUpon>ObservacionesAlumnoForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\CorreosElectronicosForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\CorreosElectronicosForma.Designer.cs">
+      <DependentUpon>CorreosElectronicosForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\HorarioNivelesForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\HorarioNivelesForma.Designer.cs">
+      <DependentUpon>HorarioNivelesForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\InscripcionesForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\InscripcionesForma.Designer.cs">
+      <DependentUpon>InscripcionesForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\PagosForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\PagosForma.Designer.cs">
+      <DependentUpon>PagosForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\DetallePagoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\DetallePagoControl.Designer.cs">
+      <DependentUpon>DetallePagoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\PagosForma.PagosRealizados.cs">
+      <DependentUpon>PagosForma.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\ParametrosForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\ParametrosForma.Designer.cs">
+      <DependentUpon>ParametrosForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\CambioClaveForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\CambioClaveForma.Designer.cs">
+      <DependentUpon>CambioClaveForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\ConfiguracionForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\ConfiguracionForma.Designer.cs">
+      <DependentUpon>ConfiguracionForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\UsuariosForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\UsuariosForma.Designer.cs">
+      <DependentUpon>UsuariosForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imagenes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Imagenes.resx</DependentUpon>
+    </Compile>
+    <Compile Include="IngresoForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresoForma.Designer.cs">
+      <DependentUpon>IngresoForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\AlumnoForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\AlumnoForma.Designer.cs">
+      <DependentUpon>AlumnoForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AcercaDeForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AcercaDeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Academicos\AlumnosPorNivelFormaReporte.resx">
+      <DependentUpon>AlumnosPorNivelFormaReporte.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Academicos\ObservacionesAlumnoFormaReporte.resx">
+      <DependentUpon>ObservacionesAlumnoFormaReporte.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Academicos\HorariosNivelesFormaReporte.resx">
+      <DependentUpon>HorariosNivelesFormaReporte.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Academicos\HorariosCursosFormaReporte.resx">
+      <DependentUpon>HorariosCursosFormaReporte.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ListadosGenerales\AulasFormaReporte.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AulasFormaReporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ListadosGenerales\RubrosFormaReporte.resx">
+      <DependentUpon>RubrosFormaReporte.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ListadosGenerales\ConferenciasFormaReporte.resx">
+      <DependentUpon>ConferenciasFormaReporte.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ListadosGenerales\CumpleanosFormaReporte.resx">
+      <DependentUpon>CumpleanosFormaReporte.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Recaudaciones\ReimpresionFacturaFormaReporte.resx">
+      <DependentUpon>ReimpresionFacturaFormaReporte.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Recaudaciones\DeudasAlumnoFormaReporte.resx">
+      <DependentUpon>DeudasAlumnoFormaReporte.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Recaudaciones\DeudasNivelesFormaReporte.resx">
+      <DependentUpon>DeudasNivelesFormaReporte.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Recaudaciones\DeudasCursosFormaReporte.resx">
+      <DependentUpon>DeudasCursosFormaReporte.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Recaudaciones\PagosxCierreFormaReporte.resx">
+      <DependentUpon>PagosxCierreFormaReporte.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\AlumnoForma.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AlumnoForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\AreaNivelForma.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AreaNivelForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\CajaForma.resx">
+      <DependentUpon>CajaForma.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\ConferenciaForma.resx">
+      <DependentUpon>ConferenciaForma.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\AulasForma.resx">
+      <DependentUpon>AulasForma.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\DocentesForma.resx">
+      <DependentUpon>DocentesForma.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\CursosForma.resx">
+      <DependentUpon>CursosForma.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\EstadoAlumnosForma.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EstadoAlumnosForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\RubroForma.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RubroForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\SecuenciasForma.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SecuenciasForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\AlumnoControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AlumnoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\AreaNivelUserControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AreaNivelUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\HorarioUserControl.resx">
+      <DependentUpon>HorarioUserControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\DataGridPagos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DataGridPagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\AlumnoBusquedaForma.resx">
+      <DependentUpon>AlumnoBusquedaForma.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\DetallePagoControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DetallePagoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Recaudaciones\CierresDeCajaFormaReporte.resx">
+      <DependentUpon>CierresDeCajaFormaReporte.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ListadosGenerales\DocentesFormaReporte.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DocentesFormaReporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\ParametrosForma.resx">
+      <DependentUpon>ParametrosForma.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\CambioClaveForma.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CambioClaveForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\ConfiguracionForma.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ConfiguracionForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\UsuariosForma.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UsuariosForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Imagenes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresoForma.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>IngresoForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Academicos\AlumnosPorCursoFormaReporte.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AlumnosPorCursoFormaReporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\HorarioCursosForma.resx">
+      <DependentUpon>HorarioCursosForma.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\AlumnoNivelForma.resx">
+      <DependentUpon>AlumnoNivelForma.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\ObservacionesAlumnoForma.resx">
+      <DependentUpon>ObservacionesAlumnoForma.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\CorreosElectronicosForma.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CorreosElectronicosForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\HorarioNivelesForma.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HorarioNivelesForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\InscripcionesForma.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>InscripcionesForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\PagosForma.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PagosForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reportes\Academicos\AlumnosPorCursoFormaReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Academicos\AlumnosPorCursoFormaReporte.Designer.cs">
+      <DependentUpon>AlumnosPorCursoFormaReporte.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.1.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2005 Express Edition</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="16x16.ico" />
+    <Content Include="24x24.ico" />
+    <Content Include="Animaciones\verdezul.swf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Datos\IDH.Datos.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Datos\IDH.Datos_log.ldf">
+      <DependentUpon>IDH.Datos.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Datos\Valores.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Datos\XMLMail.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fotos\SinFoto.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\IconoAdministracion.ico" />
+    <Content Include="Observaciones.txt" />
+    <Content Include="Resources\LogoIDH.jpg" />
+    <Content Include="Resources\Mas.jpg" />
+    <Content Include="Resources\Menos.jpg" />
+    <Content Include="Resources\Mover.jpg" />
+    <Content Include="Resources\Salir.jpg" />
+    <None Include="Resources\IconoPrincipal.ico" />
+    <None Include="Resources\IconoFormaBase.ico" />
+    <None Include="Resources\UsarSecuencia.jpg" />
+    <None Include="Resources\ResetearClave.jpg" />
+    <None Include="Resources\MostrarReporte.jpg" />
+    <None Include="Resources\MarcarPago.jpg" />
+    <None Include="Resources\Limpiar.jpg" />
+    <None Include="Resources\Imprimir.jpg" />
+    <None Include="Resources\GrabarPago.jpg" />
+    <None Include="Resources\Grabar.jpg" />
+    <None Include="Resources\GenerarDirecciones.jpg" />
+    <None Include="Resources\Estadisticas.jpg" />
+    <None Include="Resources\EscogerTodos.jpg" />
+    <None Include="Resources\EnviarCorreo.jpg" />
+    <None Include="Resources\Copiar.jpg" />
+    <None Include="Resources\CerrarCaja.jpg" />
+    <None Include="Resources\Buscar.jpg" />
+    <None Include="Resources\Borrar.jpg" />
+    <None Include="ZIP\Prueba.zip">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Verdezul.IDH.Business\Verdezul.IDH.Business.csproj">
+      <Project>{4887B6BF-DABF-47A3-A1AD-AC1726ABD2B4}</Project>
+      <Name>Verdezul.IDH.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Verdezul.IDH.Configuracion\Verdezul.IDH.Configuracion.csproj">
+      <Project>{3577F939-3A83-4A87-8166-EF3800AC4B27}</Project>
+      <Name>Verdezul.IDH.Configuracion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Verdezul.IDH.Entidades\Verdezul.IDH.Entidades.csproj">
+      <Project>{8124ED62-0C0D-4808-BAFC-2949944DB10A}</Project>
+      <Name>Verdezul.IDH.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Verdezul.IDH.Reportes\Verdezul.IDH.Reportes.csproj">
+      <Project>{18BCD77F-D420-4DEF-AA55-6AF7BA893383}</Project>
+      <Name>Verdezul.IDH.Reportes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Verdezul.Utilidades\Verdezul.Utilidades.csproj">
+      <Project>{B0484E8E-D228-4BB0-9F8E-9EE970FC787C}</Project>
+      <Name>Verdezul.Utilidades</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

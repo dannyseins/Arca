@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B0484E8E-D228-4BB0-9F8E-9EE970FC787C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Verdezul.Utilidades</RootNamespace>
+    <AssemblyName>Verdezul.Utilidades</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\ElementosReporte.cs" />
+    <Compile Include="Configuracion\BaseDatosSection.cs" />
+    <Compile Include="Configuracion\ConexionesSection.cs" />
+    <Compile Include="Configuracion\AplicacionZIPSection.cs" />
+    <Compile Include="Configuracion\ArgumentosZIP.cs" />
+    <Compile Include="Configuracion\CorreoZIPSection.cs" />
+    <Compile Include="Configuracion\RespaldosSection.cs" />
+    <Compile Include="Configuracion\ReportesSection.cs" />
+    <Compile Include="Configuracion\VerdezulConfiguration.cs" />
+    <Compile Include="Controles\MesAñoSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\MesAñoSelector.Designer.cs">
+      <DependentUpon>MesAñoSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CorreoElectronico.cs" />
+    <Compile Include="Encriptacion.cs" />
+    <Compile Include="Enumerados\FormasPago.cs" />
+    <Compile Include="Enumerados\TipoIdentificacion.cs" />
+    <Compile Include="Formas\FormaImpresionPrevia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\FormaImpresionPrevia.Designer.cs">
+      <DependentUpon>FormaImpresionPrevia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\FormaBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\FormaBase.Designer.cs">
+      <DependentUpon>FormaBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\FormaContenedora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\FormaContenedora.Designer.cs">
+      <DependentUpon>FormaContenedora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\FormaReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\FormaReporte.Designer.cs">
+      <DependentUpon>FormaReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\FormaReporteInterno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\FormaReporteInterno.Designer.cs">
+      <DependentUpon>FormaReporteInterno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formas\VisorReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formas\VisorReportes.Designer.cs">
+      <DependentUpon>VisorReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroEvento.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controles\MesAñoSelector.resx">
+      <DependentUpon>MesAñoSelector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\FormaImpresionPrevia.resx">
+      <DependentUpon>FormaImpresionPrevia.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\FormaBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormaBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\FormaContenedora.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormaContenedora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\FormaReporte.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormaReporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\FormaReporteInterno.resx">
+      <DependentUpon>FormaReporteInterno.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formas\VisorReportes.resx">
+      <DependentUpon>VisorReportes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

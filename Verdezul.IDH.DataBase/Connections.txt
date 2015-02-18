@@ -1,0 +1,4 @@
+DBRefFolders found in your dbp file
+Connect String: Data Source=.\SQLEXPRESS;AttachDbFilename=C:\WINDOWS\IDH\Verdezul.IDH.Presentacion\Datos\IDH.Datos.mdf;Integrated Security=True;User Instance=True
+Provider: Microsoft SQL Server
+

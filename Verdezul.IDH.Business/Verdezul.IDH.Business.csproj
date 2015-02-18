@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4887B6BF-DABF-47A3-A1AD-AC1726ABD2B4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Verdezul.IDH.Business</RootNamespace>
+    <AssemblyName>Verdezul.IDH.Business</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AreaManager.cs" />
+    <Compile Include="CajaManager.cs" />
+    <Compile Include="CierreDeCajaManager.cs" />
+    <Compile Include="AlumnoManager.cs" />
+    <Compile Include="ConferenciaManager.Basicos.cs">
+      <DependentUpon>ConferenciaManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConferenciaManager.cs" />
+    <Compile Include="HorarioAlumnoManager.Basicos.cs">
+      <DependentUpon>HorarioAlumnoManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HorarioAlumnoManager.cs" />
+    <Compile Include="HorarioManager.Basicos.cs">
+      <DependentUpon>HorarioManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HorarioManager.cs" />
+    <Compile Include="CursoManager.Basicos.cs">
+      <DependentUpon>CursoManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocenteManager.Basicos.cs">
+      <DependentUpon>DocenteManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AulaManager.Basicos.cs">
+      <DependentUpon>AulaManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AulaManager.cs" />
+    <Compile Include="DocenteManager.cs" />
+    <Compile Include="CursoManager.cs" />
+    <Compile Include="NivelManager.Basicos.cs">
+      <DependentUpon>NivelManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NivelManager.cs" />
+    <Compile Include="EstadoAlumnoManager.cs" />
+    <Compile Include="ObservacionManager.Basicos.cs">
+      <DependentUpon>ObservacionManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObservacionManager.cs" />
+    <Compile Include="RubroManager.cs" />
+    <Compile Include="ParametroManager.cs" />
+    <Compile Include="PagoManager.cs" />
+    <Compile Include="SecuenciaImpresionManager.cs" />
+    <Compile Include="UsuarioManager.cs" />
+    <Compile Include="EstadoAlumnoManager.Basicos.cs">
+      <DependentUpon>EstadoAlumnoManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AreaManager.Basicos.cs">
+      <DependentUpon>AreaManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CajaManager.Basicos.cs">
+      <DependentUpon>CajaManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CierreDeCajaManager.Basicos.cs">
+      <DependentUpon>CierreDeCajaManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlumnoManager.Basicos.cs">
+      <DependentUpon>AlumnoManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RubroManager.Basicos.cs">
+      <DependentUpon>RubroManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParametroManager.Basicos.cs">
+      <DependentUpon>ParametroManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PagoManager.Basicos.cs">
+      <DependentUpon>PagoManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecuenciaImpresionManager.Basicos.cs">
+      <DependentUpon>SecuenciaImpresionManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsuarioManager.Basicos.cs">
+      <DependentUpon>UsuarioManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Verdezul.IDH.Configuracion\Verdezul.IDH.Configuracion.csproj">
+      <Project>{3577F939-3A83-4A87-8166-EF3800AC4B27}</Project>
+      <Name>Verdezul.IDH.Configuracion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Verdezul.IDH.DataAccess\Verdezul.IDH.DataAccess.csproj">
+      <Project>{B21AE916-22B7-42C6-AC2C-4935205667C8}</Project>
+      <Name>Verdezul.IDH.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Verdezul.IDH.Entidades\Verdezul.IDH.Entidades.csproj">
+      <Project>{8124ED62-0C0D-4808-BAFC-2949944DB10A}</Project>
+      <Name>Verdezul.IDH.Entidades</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

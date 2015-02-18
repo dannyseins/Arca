@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="UsuarioDataSet" targetNamespace="http://tempuri.org/UsuarioDataSet.xsd" xmlns:mstns="http://tempuri.org/UsuarioDataSet.xsd" xmlns="http://tempuri.org/UsuarioDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Fredos_CajaConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="Fredos_CajaConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Verdezul.IDH.Entidades.Properties.Settings.GlobalReference.Default.Fredos_CajaConnectionString1" Provider="System.Data.SqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Fredos_CajaConnectionString3" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="Fredos_CajaConnectionString3 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Verdezul.IDH.Entidades.Properties.Settings.GlobalReference.Default.Fredos_CajaConnectionString3" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="UsuarioDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="UsuarioDataSet" msprop:Generator_DataSetName="UsuarioDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Usuario" msprop:Generator_UserTableName="Usuario" msprop:Generator_RowDeletedName="UsuarioRowDeleted" msprop:Generator_RowChangedName="UsuarioRowChanged" msprop:Generator_RowClassName="UsuarioRow" msprop:Generator_RowChangingName="UsuarioRowChanging" msprop:Generator_RowEvArgName="UsuarioRowChangeEvent" msprop:Generator_RowEvHandlerName="UsuarioRowChangeEventHandler" msprop:Generator_TableClassName="UsuarioDataTable" msprop:Generator_TableVarName="tableUsuario" msprop:Generator_RowDeletingName="UsuarioRowDeleting" msprop:Generator_TablePropName="Usuario">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:int" />
+              <xs:element name="TipoRol" msprop:Generator_UserColumnName="TipoRol" msprop:Generator_ColumnVarNameInTable="columnTipoRol" msprop:Generator_ColumnPropNameInRow="TipoRol" msprop:Generator_ColumnPropNameInTable="TipoRolColumn" type="xs:int" />
+              <xs:element name="NickName" msprop:Generator_UserColumnName="NickName" msprop:Generator_ColumnVarNameInTable="columnNickName" msprop:Generator_ColumnPropNameInRow="NickName" msprop:Generator_ColumnPropNameInTable="NickNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Clave" msprop:Generator_UserColumnName="Clave" msprop:Generator_ColumnVarNameInTable="columnClave" msprop:Generator_ColumnPropNameInRow="Clave" msprop:Generator_ColumnPropNameInTable="ClaveColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NombreCompleto" msprop:Generator_UserColumnName="NombreCompleto" msprop:Generator_ColumnVarNameInTable="columnNombreCompleto" msprop:Generator_ColumnPropNameInRow="NombreCompleto" msprop:Generator_ColumnPropNameInTable="NombreCompletoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CI" msprop:Generator_UserColumnName="CI" msprop:Generator_ColumnVarNameInTable="columnCI" msprop:Generator_ColumnPropNameInRow="CI" msprop:Generator_ColumnPropNameInTable="CIColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Direccion" msprop:Generator_UserColumnName="Direccion" msprop:Generator_ColumnVarNameInTable="columnDireccion" msprop:Generator_ColumnPropNameInRow="Direccion" msprop:Generator_ColumnPropNameInTable="DireccionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Telefono" msprop:Generator_UserColumnName="Telefono" msprop:Generator_ColumnVarNameInTable="columnTelefono" msprop:Generator_ColumnPropNameInRow="Telefono" msprop:Generator_ColumnPropNameInTable="TelefonoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Email" msprop:Generator_UserColumnName="Email" msprop:Generator_ColumnVarNameInTable="columnEmail" msprop:Generator_ColumnPropNameInRow="Email" msprop:Generator_ColumnPropNameInTable="EmailColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Activo" msprop:Generator_UserColumnName="Activo" msprop:Generator_ColumnVarNameInTable="columnActivo" msprop:Generator_ColumnPropNameInRow="Activo" msprop:Generator_ColumnPropNameInTable="ActivoColumn" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Usuario" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

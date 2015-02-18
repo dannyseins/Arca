@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CierreDeCajaDataSet" targetNamespace="http://tempuri.org/CierreDeCajaDataSet.xsd" xmlns:mstns="http://tempuri.org/CierreDeCajaDataSet.xsd" xmlns="http://tempuri.org/CierreDeCajaDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Fredos_CajaConnectionString2" IsAppSettingsProperty="True" Modifier="Assembly" Name="Fredos_CajaConnectionString2 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Verdezul.IDH.Entidades.Properties.Settings.GlobalReference.Default.Fredos_CajaConnectionString2" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CierreDeCajaDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="CierreDeCajaDataSet" msprop:Generator_DataSetName="CierreDeCajaDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CierreDeCaja" msprop:Generator_UserTableName="CierreDeCaja" msprop:Generator_RowDeletedName="CierreDeCajaRowDeleted" msprop:Generator_RowChangedName="CierreDeCajaRowChanged" msprop:Generator_RowClassName="CierreDeCajaRow" msprop:Generator_RowChangingName="CierreDeCajaRowChanging" msprop:Generator_RowEvArgName="CierreDeCajaRowChangeEvent" msprop:Generator_RowEvHandlerName="CierreDeCajaRowChangeEventHandler" msprop:Generator_TableClassName="CierreDeCajaDataTable" msprop:Generator_TableVarName="tableCierreDeCaja" msprop:Generator_RowDeletingName="CierreDeCajaRowDeleting" msprop:Generator_TablePropName="CierreDeCaja">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="Id" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:int" />
+              <xs:element name="IdCaja" msprop:Generator_UserColumnName="IdCaja" msprop:Generator_ColumnPropNameInRow="IdCaja" msprop:Generator_ColumnVarNameInTable="columnIdCaja" msprop:Generator_ColumnPropNameInTable="IdCajaColumn" type="xs:int" />
+              <xs:element name="IdUsuario" msprop:Generator_UserColumnName="IdUsuario" msprop:Generator_ColumnPropNameInRow="IdUsuario" msprop:Generator_ColumnVarNameInTable="columnIdUsuario" msprop:Generator_ColumnPropNameInTable="IdUsuarioColumn" type="xs:int" />
+              <xs:element name="FechaApertura" msprop:Generator_UserColumnName="FechaApertura" msprop:Generator_ColumnPropNameInRow="FechaApertura" msprop:Generator_ColumnVarNameInTable="columnFechaApertura" msprop:Generator_ColumnPropNameInTable="FechaAperturaColumn" type="xs:dateTime" />
+              <xs:element name="FechaCierre" msprop:Generator_UserColumnName="FechaCierre" msprop:Generator_ColumnPropNameInRow="FechaCierre" msprop:Generator_ColumnVarNameInTable="columnFechaCierre" msprop:Generator_ColumnPropNameInTable="FechaCierreColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Observaciones" msprop:Generator_UserColumnName="Observaciones" msprop:Generator_ColumnPropNameInRow="Observaciones" msprop:Generator_ColumnVarNameInTable="columnObservaciones" msprop:Generator_ColumnPropNameInTable="ObservacionesColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CierreDeCaja" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

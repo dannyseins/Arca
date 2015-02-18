@@ -1,0 +1,38 @@
+1. Administracion
+	- Todo Listo
+
+2. Animaciones
+	- Hacer animación que redireccione a sito web
+
+3. Controles
+	- Todo Listo
+
+4. Datos
+	- Actualizar datos de Valores.xml
+	- Verificar Area/Nivel en base de datos
+
+5. Reportes
+	- Verificar el significado de "Activo"
+
+6. Resources
+	- Revisar íconos de aplicación
+
+7. Seguridad
+	- Todo Listo
+	
+8. Sistema
+	- Todo Listo
+
+9. General
+	- AcercaDe - Poner la imagen correcta de IDH
+	- Principal - Cambiar Título a ARCA
+	- Usar la base de datos instalada.
+	- Cambiar iconos
+	
+10. DataBase
+	- Generar Script de Creación de Base de Datos
+	- Crear SP a partir de scripts
+
+11. Configuración
+	- Revisar estructura de Factura.
+	

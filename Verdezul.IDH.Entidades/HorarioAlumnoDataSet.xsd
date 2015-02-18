@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="HorarioAlumnoDataSet" targetNamespace="http://tempuri.org/HorarioAlumnoDataSet.xsd" xmlns:mstns="http://tempuri.org/HorarioAlumnoDataSet.xsd" xmlns="http://tempuri.org/HorarioAlumnoDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="IDH_DatosConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="IDH_DatosConnectionString2 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Verdezul.IDH.Entidades.Properties.Settings.GlobalReference.Default.IDH_DatosConnectionString2" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="HorarioAlumnoDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="HorarioAlumnoDataSet" msprop:Generator_DataSetName="HorarioAlumnoDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="HorarioAlumno" msprop:Generator_UserTableName="HorarioAlumno" msprop:Generator_RowDeletedName="HorarioAlumnoRowDeleted" msprop:Generator_RowChangedName="HorarioAlumnoRowChanged" msprop:Generator_RowClassName="HorarioAlumnoRow" msprop:Generator_RowChangingName="HorarioAlumnoRowChanging" msprop:Generator_RowEvArgName="HorarioAlumnoRowChangeEvent" msprop:Generator_RowEvHandlerName="HorarioAlumnoRowChangeEventHandler" msprop:Generator_TableClassName="HorarioAlumnoDataTable" msprop:Generator_TableVarName="tableHorarioAlumno" msprop:Generator_RowDeletingName="HorarioAlumnoRowDeleting" msprop:Generator_TablePropName="HorarioAlumno">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="Id" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:int" />
+              <xs:element name="IdAlumno" msprop:Generator_UserColumnName="IdAlumno" msprop:Generator_ColumnPropNameInRow="IdAlumno" msprop:Generator_ColumnVarNameInTable="columnIdAlumno" msprop:Generator_ColumnPropNameInTable="IdAlumnoColumn" type="xs:int" />
+              <xs:element name="IdHorario" msprop:Generator_UserColumnName="IdHorario" msprop:Generator_ColumnPropNameInRow="IdHorario" msprop:Generator_ColumnVarNameInTable="columnIdHorario" msprop:Generator_ColumnPropNameInTable="IdHorarioColumn" type="xs:int" />
+              <xs:element name="FechaInicio" msprop:Generator_UserColumnName="FechaInicio" msprop:Generator_ColumnPropNameInRow="FechaInicio" msprop:Generator_ColumnVarNameInTable="columnFechaInicio" msprop:Generator_ColumnPropNameInTable="FechaInicioColumn" type="xs:dateTime" />
+              <xs:element name="FechaFin" msprop:Generator_UserColumnName="FechaFin" msprop:Generator_ColumnPropNameInRow="FechaFin" msprop:Generator_ColumnVarNameInTable="columnFechaFin" msprop:Generator_ColumnPropNameInTable="FechaFinColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Activo" msprop:Generator_UserColumnName="Activo" msprop:Generator_ColumnVarNameInTable="columnActivo" msprop:Generator_ColumnPropNameInRow="Activo" msprop:Generator_ColumnPropNameInTable="ActivoColumn" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:HorarioAlumno" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

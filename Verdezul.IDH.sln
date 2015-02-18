@@ -1,0 +1,97 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2013 for Windows Desktop
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Verdezul.IDH.Presentacion", "Verdezul.IDH.Presentacion\Verdezul.IDH.Presentacion.csproj", "{3C22F40D-30A1-4FF7-BE32-2D4973DE145F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Verdezul.Utilidades", "Verdezul.Utilidades\Verdezul.Utilidades.csproj", "{B0484E8E-D228-4BB0-9F8E-9EE970FC787C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Verdezul.IDH.Business", "Verdezul.IDH.Business\Verdezul.IDH.Business.csproj", "{4887B6BF-DABF-47A3-A1AD-AC1726ABD2B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Verdezul.IDH.DataAccess", "Verdezul.IDH.DataAccess\Verdezul.IDH.DataAccess.csproj", "{B21AE916-22B7-42C6-AC2C-4935205667C8}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Verdezul.IDH.DataBase", "Verdezul.IDH.DataBase\Verdezul.IDH.DataBase.sqlproj", "{459F460D-A2A7-41EE-88F4-0D56E78A9CBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Verdezul.IDH.Reportes", "Verdezul.IDH.Reportes\Verdezul.IDH.Reportes.csproj", "{18BCD77F-D420-4DEF-AA55-6AF7BA893383}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Verdezul.IDH.Entidades", "Verdezul.IDH.Entidades\Verdezul.IDH.Entidades.csproj", "{8124ED62-0C0D-4808-BAFC-2949944DB10A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Verdezul.IDH.Configuracion", "Verdezul.IDH.Configuracion\Verdezul.IDH.Configuracion.csproj", "{3577F939-3A83-4A87-8166-EF3800AC4B27}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Verdezul.IDH.Instalacion", "Verdezul.IDH.Instalacion\Verdezul.IDH.Instalacion.vdproj", "{95504916-5A23-434F-B7EC-7122189F4F09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C22F40D-30A1-4FF7-BE32-2D4973DE145F}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{3C22F40D-30A1-4FF7-BE32-2D4973DE145F}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{3C22F40D-30A1-4FF7-BE32-2D4973DE145F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C22F40D-30A1-4FF7-BE32-2D4973DE145F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0484E8E-D228-4BB0-9F8E-9EE970FC787C}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{B0484E8E-D228-4BB0-9F8E-9EE970FC787C}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{B0484E8E-D228-4BB0-9F8E-9EE970FC787C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0484E8E-D228-4BB0-9F8E-9EE970FC787C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4887B6BF-DABF-47A3-A1AD-AC1726ABD2B4}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{4887B6BF-DABF-47A3-A1AD-AC1726ABD2B4}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{4887B6BF-DABF-47A3-A1AD-AC1726ABD2B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4887B6BF-DABF-47A3-A1AD-AC1726ABD2B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B21AE916-22B7-42C6-AC2C-4935205667C8}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{B21AE916-22B7-42C6-AC2C-4935205667C8}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{B21AE916-22B7-42C6-AC2C-4935205667C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B21AE916-22B7-42C6-AC2C-4935205667C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{459F460D-A2A7-41EE-88F4-0D56E78A9CBF}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{459F460D-A2A7-41EE-88F4-0D56E78A9CBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18BCD77F-D420-4DEF-AA55-6AF7BA893383}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{18BCD77F-D420-4DEF-AA55-6AF7BA893383}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{18BCD77F-D420-4DEF-AA55-6AF7BA893383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18BCD77F-D420-4DEF-AA55-6AF7BA893383}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8124ED62-0C0D-4808-BAFC-2949944DB10A}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{8124ED62-0C0D-4808-BAFC-2949944DB10A}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{8124ED62-0C0D-4808-BAFC-2949944DB10A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8124ED62-0C0D-4808-BAFC-2949944DB10A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3577F939-3A83-4A87-8166-EF3800AC4B27}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{3577F939-3A83-4A87-8166-EF3800AC4B27}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{3577F939-3A83-4A87-8166-EF3800AC4B27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3577F939-3A83-4A87-8166-EF3800AC4B27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95504916-5A23-434F-B7EC-7122189F4F09}.Debug|Any CPU.ActiveCfg = Debug
+		{95504916-5A23-434F-B7EC-7122189F4F09}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 10
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Verdezul.IDH.Business\\Verdezul.IDH.Business.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = Verdezul.IDH.Business\\
+		SccProjectUniqueName2 = Verdezul.IDH.Configuracion\\Verdezul.IDH.Configuracion.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = Verdezul.IDH.Configuracion\\
+		SccProjectUniqueName3 = Verdezul.IDH.DataAccess\\Verdezul.IDH.DataAccess.csproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = Verdezul.IDH.DataAccess\\
+		SccProjectUniqueName4 = Verdezul.IDH.DataBase\\Verdezul.IDH.DataBase.dbp
+		SccLocalPath4 = .
+		SccProjectFilePathRelativizedFromConnection4 = Verdezul.IDH.DataBase\\
+		SccProjectUniqueName5 = Verdezul.IDH.Entidades\\Verdezul.IDH.Entidades.csproj
+		SccLocalPath5 = .
+		SccProjectFilePathRelativizedFromConnection5 = Verdezul.IDH.Entidades\\
+		SccProjectUniqueName6 = Verdezul.IDH.Presentacion\\Verdezul.IDH.Presentacion.csproj
+		SccLocalPath6 = .
+		SccProjectFilePathRelativizedFromConnection6 = Verdezul.IDH.Presentacion\\
+		SccProjectUniqueName7 = Verdezul.IDH.Reportes\\Verdezul.IDH.Reportes.csproj
+		SccLocalPath7 = .
+		SccProjectFilePathRelativizedFromConnection7 = Verdezul.IDH.Reportes\\
+		SccProjectUniqueName8 = Verdezul.Utilidades\\Verdezul.Utilidades.csproj
+		SccLocalPath8 = .
+		SccProjectFilePathRelativizedFromConnection8 = Verdezul.Utilidades\\
+		SccProjectUniqueName9 = Verdezul.IDH.Instalacion\\Verdezul.IDH.Instalacion.vdproj
+		SccLocalPath9 = .
+		SccProjectFilePathRelativizedFromConnection9 = Verdezul.IDH.Instalacion\\
+	EndGlobalSection
+EndGlobal

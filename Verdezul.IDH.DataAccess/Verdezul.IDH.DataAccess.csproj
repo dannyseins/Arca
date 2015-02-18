@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B21AE916-22B7-42C6-AC2C-4935205667C8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Verdezul.IDH.DataAccess</RootNamespace>
+    <AssemblyName>Verdezul.IDH.DataAccess</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AreaDataAccess.cs" />
+    <Compile Include="CajaDataAccess.cs" />
+    <Compile Include="CierreDeCajaDataAccess.cs" />
+    <Compile Include="ConferenciaDataAccess.Basicos.cs">
+      <DependentUpon>ConferenciaDataAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConferenciaDataAccess.cs" />
+    <Compile Include="HorarioAlumnoDataAccess.Basicos.cs">
+      <DependentUpon>HorarioAlumnoDataAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HorarioAlumnoDataAccess.cs" />
+    <Compile Include="HorarioDataAccess.Basicos.cs">
+      <DependentUpon>HorarioDataAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HorarioDataAccess.cs" />
+    <Compile Include="CursoDataAccess.Basicos.cs">
+      <DependentUpon>CursoDataAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocenteDataAccess.Basicos.cs">
+      <DependentUpon>DocenteDataAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AulaDataAccess.Basicos.cs">
+      <DependentUpon>AulaDataAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AulaDataAccess.cs" />
+    <Compile Include="DocenteDataAccess.cs" />
+    <Compile Include="CursoDataAccess.cs" />
+    <Compile Include="NivelDataAccess.Basicos.cs">
+      <DependentUpon>NivelDataAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NivelDataAccess.cs" />
+    <Compile Include="EstadoAlumnoDataAccess.cs" />
+    <Compile Include="GenericDataAccess.cs" />
+    <Compile Include="ObservacionDataAccess.Basicos.cs">
+      <DependentUpon>ObservacionDataAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObservacionDataAccess.cs" />
+    <Compile Include="SQLConexion.cs" />
+    <Compile Include="AlumnoDataAccess.cs" />
+    <Compile Include="RubroDataAccess.cs" />
+    <Compile Include="ParametroDataAccess.cs" />
+    <Compile Include="PagoDataAccess.cs" />
+    <Compile Include="SecuenciaImpresionDataAccess.cs" />
+    <Compile Include="UsuarioDataAccess.cs" />
+    <Compile Include="EstadoAlumnoDataAccess.Basicos.cs">
+      <DependentUpon>EstadoAlumnoDataAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AreaDataAccess.Basicos.cs">
+      <DependentUpon>AreaDataAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CajaDataAccess.Basicos.cs">
+      <DependentUpon>CajaDataAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CierreDeCajaDataAccess.Basicos.cs">
+      <DependentUpon>CierreDeCajaDataAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlumnoDataAccess.Basicos.cs">
+      <DependentUpon>AlumnoDataAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RubroDataAccess.Basicos.cs">
+      <DependentUpon>RubroDataAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParametroDataAccess.Basicos.cs">
+      <DependentUpon>ParametroDataAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PagoDataAccess.Basicos.cs">
+      <DependentUpon>PagoDataAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecuenciaImpresionDataAccess.Basicos.cs">
+      <DependentUpon>SecuenciaImpresionDataAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsuarioDataAccess.Basicos.cs">
+      <DependentUpon>UsuarioDataAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Verdezul.IDH.Configuracion\Verdezul.IDH.Configuracion.csproj">
+      <Project>{3577F939-3A83-4A87-8166-EF3800AC4B27}</Project>
+      <Name>Verdezul.IDH.Configuracion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Verdezul.IDH.Entidades\Verdezul.IDH.Entidades.csproj">
+      <Project>{8124ED62-0C0D-4808-BAFC-2949944DB10A}</Project>
+      <Name>Verdezul.IDH.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Verdezul.Utilidades\Verdezul.Utilidades.csproj">
+      <Project>{B0484E8E-D228-4BB0-9F8E-9EE970FC787C}</Project>
+      <Name>Verdezul.Utilidades</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

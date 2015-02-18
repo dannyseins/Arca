@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8124ED62-0C0D-4808-BAFC-2949944DB10A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Verdezul.IDH.Entidades</RootNamespace>
+    <AssemblyName>Verdezul.IDH.Entidades</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AreaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AreaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AulaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AulaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CajaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CajaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CierreDeCajaDataSet.Designer.cs">
+      <DependentUpon>CierreDeCajaDataSet.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="AlumnoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AlumnoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ConferenciaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConferenciaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CursoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CursoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DocenteDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DocenteDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EstadoAlumnoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EstadoAlumnoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HorarioAlumnoDataSet.cs">
+      <DependentUpon>HorarioAlumnoDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HorarioAlumnoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HorarioAlumnoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HorarioDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HorarioDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ObservacionDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ObservacionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RubroDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RubroDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ParametroDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ParametroDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PagoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PagoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecuenciaImpresionDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SecuenciaImpresionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UsuarioDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UsuarioDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AreaDataSet.xsc">
+      <DependentUpon>AreaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AreaDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AreaDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AreaDataSet.xss">
+      <DependentUpon>AreaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AulaDataSet.xsc">
+      <DependentUpon>AulaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AulaDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AulaDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AulaDataSet.xss">
+      <DependentUpon>AulaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CajaDataSet.xsc">
+      <DependentUpon>CajaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CajaDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CajaDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="CajaDataSet.xss">
+      <DependentUpon>CajaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CierreDeCajaDataSet.xsc">
+      <DependentUpon>CierreDeCajaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CierreDeCajaDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CierreDeCajaDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="CierreDeCajaDataSet.xss">
+      <DependentUpon>CierreDeCajaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AlumnoDataSet.xsc">
+      <DependentUpon>AlumnoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AlumnoDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AlumnoDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AlumnoDataSet.xss">
+      <DependentUpon>AlumnoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ConferenciaDataSet.xsc">
+      <DependentUpon>ConferenciaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ConferenciaDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ConferenciaDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ConferenciaDataSet.xss">
+      <DependentUpon>ConferenciaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CursoDataSet.xsc">
+      <DependentUpon>CursoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CursoDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CursoDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="CursoDataSet.xss">
+      <DependentUpon>CursoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DocenteDataSet.xsc">
+      <DependentUpon>DocenteDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DocenteDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DocenteDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DocenteDataSet.xss">
+      <DependentUpon>DocenteDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EstadoAlumnoDataSet.xsc">
+      <DependentUpon>EstadoAlumnoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EstadoAlumnoDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EstadoAlumnoDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="EstadoAlumnoDataSet.xss">
+      <DependentUpon>EstadoAlumnoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HorarioAlumnoDataSet.xsc">
+      <DependentUpon>HorarioAlumnoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HorarioAlumnoDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HorarioAlumnoDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="HorarioAlumnoDataSet.xss">
+      <DependentUpon>HorarioAlumnoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HorarioDataSet.xsc">
+      <DependentUpon>HorarioDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HorarioDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HorarioDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="HorarioDataSet.xss">
+      <DependentUpon>HorarioDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ObservacionDataSet.xsc">
+      <DependentUpon>ObservacionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ObservacionDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ObservacionDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ObservacionDataSet.xss">
+      <DependentUpon>ObservacionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RubroDataSet.xsc">
+      <DependentUpon>RubroDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RubroDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RubroDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RubroDataSet.xss">
+      <DependentUpon>RubroDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ParametroDataSet.xsc">
+      <DependentUpon>ParametroDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ParametroDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ParametroDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ParametroDataSet.xss">
+      <DependentUpon>ParametroDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PagoDataSet.xsc">
+      <DependentUpon>PagoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PagoDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PagoDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PagoDataSet.xss">
+      <DependentUpon>PagoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SecuenciaImpresionDataSet.xsc">
+      <DependentUpon>SecuenciaImpresionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SecuenciaImpresionDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SecuenciaImpresionDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SecuenciaImpresionDataSet.xss">
+      <DependentUpon>SecuenciaImpresionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UsuarioDataSet.xsc">
+      <DependentUpon>UsuarioDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UsuarioDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UsuarioDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UsuarioDataSet.xss">
+      <DependentUpon>UsuarioDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

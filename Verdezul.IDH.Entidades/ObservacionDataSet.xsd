@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ObservacionDataSet" targetNamespace="http://tempuri.org/ObservacionDataSet.xsd" xmlns:mstns="http://tempuri.org/ObservacionDataSet.xsd" xmlns="http://tempuri.org/ObservacionDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="IDH_DatosConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="IDH_DatosConnectionString2 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Verdezul.IDH.Entidades.Properties.Settings.GlobalReference.Default.IDH_DatosConnectionString2" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ObservacionDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ObservacionDataSet" msprop:Generator_DataSetName="ObservacionDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Observacion" msprop:Generator_UserTableName="Observacion" msprop:Generator_RowDeletedName="ObservacionRowDeleted" msprop:Generator_RowChangedName="ObservacionRowChanged" msprop:Generator_RowClassName="ObservacionRow" msprop:Generator_RowChangingName="ObservacionRowChanging" msprop:Generator_RowEvArgName="ObservacionRowChangeEvent" msprop:Generator_RowEvHandlerName="ObservacionRowChangeEventHandler" msprop:Generator_TableClassName="ObservacionDataTable" msprop:Generator_TableVarName="tableObservacion" msprop:Generator_RowDeletingName="ObservacionRowDeleting" msprop:Generator_TablePropName="Observacion">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:int" />
+              <xs:element name="IdAlumno" msprop:Generator_UserColumnName="IdAlumno" msprop:Generator_ColumnVarNameInTable="columnIdAlumno" msprop:Generator_ColumnPropNameInRow="IdAlumno" msprop:Generator_ColumnPropNameInTable="IdAlumnoColumn" type="xs:int" />
+              <xs:element name="IdDocente" msprop:Generator_UserColumnName="IdDocente" msprop:Generator_ColumnVarNameInTable="columnIdDocente" msprop:Generator_ColumnPropNameInRow="IdDocente" msprop:Generator_ColumnPropNameInTable="IdDocenteColumn" type="xs:int" />
+              <xs:element name="TextoAbierto" msprop:Generator_UserColumnName="TextoAbierto" msprop:Generator_ColumnVarNameInTable="columnTextoAbierto" msprop:Generator_ColumnPropNameInRow="TextoAbierto" msprop:Generator_ColumnPropNameInTable="TextoAbiertoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fecha" msprop:Generator_UserColumnName="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Observacion" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

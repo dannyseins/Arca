@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RubroDataSet" targetNamespace="http://tempuri.org/RubroDataSet.xsd" xmlns:mstns="http://tempuri.org/RubroDataSet.xsd" xmlns="http://tempuri.org/RubroDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="2" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Fredos_CajaConnectionString" IsAppSettingsProperty="True" Modifier="Assembly" Name="Fredos_CajaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Verdezul.IDH.Entidades.Properties.Settings.GlobalReference.Default.Fredos_CajaConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Fredos_CajaConnectionString1" IsAppSettingsProperty="True" Modifier="Assembly" Name="Fredos_CajaConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Verdezul.IDH.Entidades.Properties.Settings.GlobalReference.Default.Fredos_CajaConnectionString1" Provider="System.Data.SqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="IDH_DatosConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="IDH_DatosConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Verdezul.IDH.Entidades.Properties.Settings.GlobalReference.Default.IDH_DatosConnectionString1" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RubroDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="RubroDataSet" msprop:Generator_DataSetName="RubroDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Rubro" msprop:Generator_UserTableName="Rubro" msprop:Generator_RowDeletedName="RubroRowDeleted" msprop:Generator_TableClassName="RubroDataTable" msprop:Generator_RowChangedName="RubroRowChanged" msprop:Generator_RowClassName="RubroRow" msprop:Generator_RowChangingName="RubroRowChanging" msprop:Generator_RowEvArgName="RubroRowChangeEvent" msprop:Generator_RowEvHandlerName="RubroRowChangeEventHandler" msprop:Generator_TablePropName="Rubro" msprop:Generator_TableVarName="tableRubro" msprop:Generator_RowDeletingName="RubroRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="Id" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:int" />
+              <xs:element name="Nombre" msprop:Generator_UserColumnName="Nombre" msprop:Generator_ColumnPropNameInRow="Nombre" msprop:Generator_ColumnVarNameInTable="columnNombre" msprop:Generator_ColumnPropNameInTable="NombreColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Descripcion" msprop:Generator_UserColumnName="Descripcion" msprop:Generator_ColumnPropNameInRow="Descripcion" msprop:Generator_ColumnVarNameInTable="columnDescripcion" msprop:Generator_ColumnPropNameInTable="DescripcionColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="64" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Valor" msprop:Generator_UserColumnName="Valor" msprop:Generator_ColumnPropNameInRow="Valor" msprop:Generator_ColumnVarNameInTable="columnValor" msprop:Generator_ColumnPropNameInTable="ValorColumn" type="xs:decimal" />
+              <xs:element name="IVA" msprop:Generator_UserColumnName="IVA" msprop:Generator_ColumnPropNameInRow="IVA" msprop:Generator_ColumnVarNameInTable="columnIVA" msprop:Generator_ColumnPropNameInTable="IVAColumn" type="xs:decimal" />
+              <xs:element name="PVP" msprop:Generator_UserColumnName="PVP" msprop:Generator_ColumnPropNameInRow="PVP" msprop:Generator_ColumnVarNameInTable="columnPVP" msprop:Generator_ColumnPropNameInTable="PVPColumn" type="xs:decimal" />
+              <xs:element name="TieneIVA" msprop:Generator_UserColumnName="TieneIVA" msprop:Generator_ColumnPropNameInRow="TieneIVA" msprop:Generator_ColumnVarNameInTable="columnTieneIVA" msprop:Generator_ColumnPropNameInTable="TieneIVAColumn" type="xs:boolean" />
+              <xs:element name="Activo" msprop:Generator_UserColumnName="Activo" msprop:Generator_ColumnPropNameInRow="Activo" msprop:Generator_ColumnVarNameInTable="columnActivo" msprop:Generator_ColumnPropNameInTable="ActivoColumn" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Rubro" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

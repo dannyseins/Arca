@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CorreoIDH>
+	<titulo>Este es el título</titulo>
+	<cuerpoGenerico>
+		<![CDATA[
+<h1>Invitación</h1>
+Si no puede ver la imagen haga click <a target="_blank" href="{0}">aquí</a>
+<img alt="Probado" src="{0}"/><br />
+		]]>
+	</cuerpoGenerico>
+</CorreoIDH>

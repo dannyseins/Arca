@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SecuenciaImpresionDataSet" targetNamespace="http://tempuri.org/SecuenciaImpresionDataSet.xsd" xmlns:mstns="http://tempuri.org/SecuenciaImpresionDataSet.xsd" xmlns="http://tempuri.org/SecuenciaImpresionDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Fredos_CajaConnectionString3" IsAppSettingsProperty="True" Modifier="Assembly" Name="Fredos_CajaConnectionString3 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Verdezul.IDH.Entidades.Properties.Settings.GlobalReference.Default.Fredos_CajaConnectionString3" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SecuenciaImpresionDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SecuenciaImpresionDataSet" msprop:Generator_DataSetName="SecuenciaImpresionDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SecuenciaImpresion" msprop:Generator_UserTableName="SecuenciaImpresion" msprop:Generator_RowDeletedName="SecuenciaImpresionRowDeleted" msprop:Generator_RowChangedName="SecuenciaImpresionRowChanged" msprop:Generator_RowClassName="SecuenciaImpresionRow" msprop:Generator_RowChangingName="SecuenciaImpresionRowChanging" msprop:Generator_RowEvArgName="SecuenciaImpresionRowChangeEvent" msprop:Generator_RowEvHandlerName="SecuenciaImpresionRowChangeEventHandler" msprop:Generator_TableClassName="SecuenciaImpresionDataTable" msprop:Generator_TableVarName="tableSecuenciaImpresion" msprop:Generator_RowDeletingName="SecuenciaImpresionRowDeleting" msprop:Generator_TablePropName="SecuenciaImpresion">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="Id" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:int" />
+              <xs:element name="Fecha" msprop:Generator_UserColumnName="Fecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" type="xs:dateTime" />
+              <xs:element name="ValorUsado" msprop:Generator_UserColumnName="ValorUsado" msprop:Generator_ColumnPropNameInRow="ValorUsado" msprop:Generator_ColumnVarNameInTable="columnValorUsado" msprop:Generator_ColumnPropNameInTable="ValorUsadoColumn" type="xs:int" />
+              <xs:element name="ValorInicio" msprop:Generator_UserColumnName="ValorInicio" msprop:Generator_ColumnPropNameInRow="ValorInicio" msprop:Generator_ColumnVarNameInTable="columnValorInicio" msprop:Generator_ColumnPropNameInTable="ValorInicioColumn" type="xs:int" />
+              <xs:element name="ValorFin" msprop:Generator_UserColumnName="ValorFin" msprop:Generator_ColumnPropNameInRow="ValorFin" msprop:Generator_ColumnVarNameInTable="columnValorFin" msprop:Generator_ColumnPropNameInTable="ValorFinColumn" type="xs:int" />
+              <xs:element name="Prefijo" msprop:Generator_UserColumnName="Prefijo" msprop:Generator_ColumnPropNameInRow="Prefijo" msprop:Generator_ColumnVarNameInTable="columnPrefijo" msprop:Generator_ColumnPropNameInTable="PrefijoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NumCaracteres" msprop:Generator_UserColumnName="NumCaracteres" msprop:Generator_ColumnPropNameInRow="NumCaracteres" msprop:Generator_ColumnVarNameInTable="columnNumCaracteres" msprop:Generator_ColumnPropNameInTable="NumCaracteresColumn" type="xs:int" />
+              <xs:element name="EnUso" msprop:Generator_UserColumnName="EnUso" msprop:Generator_ColumnPropNameInRow="EnUso" msprop:Generator_ColumnVarNameInTable="columnEnUso" msprop:Generator_ColumnPropNameInTable="EnUsoColumn" type="xs:boolean" />
+              <xs:element name="Cerrado" msprop:Generator_UserColumnName="Cerrado" msprop:Generator_ColumnPropNameInRow="Cerrado" msprop:Generator_ColumnVarNameInTable="columnCerrado" msprop:Generator_ColumnPropNameInTable="CerradoColumn" type="xs:boolean" />
+              <xs:element name="TipoDocumentoPago" msprop:Generator_UserColumnName="TipoDocumentoPago" msprop:Generator_ColumnPropNameInRow="TipoDocumentoPago" msprop:Generator_ColumnVarNameInTable="columnTipoDocumentoPago" msprop:Generator_ColumnPropNameInTable="TipoDocumentoPagoColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SecuenciaImpresion" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
